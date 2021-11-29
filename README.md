@@ -1,14 +1,14 @@
-pysideuic
+pyside2uic
 =========
 
-Provides PySide dynamic .ui file loading similar to the PyQt uic functionality.
+Provides PySide2 dynamic .ui file loading similar to the PyQt5 uic functionality.
 
 
 Installation
 ------------
 
 ```sh
-pip install git+https://github.com/bpabel/pysideuic.git
+python3 -m pip install git+https://github.com/turboss/pyside2uic.git
 ```
 
 Usage
@@ -18,7 +18,7 @@ The `loadUi()` function takes a path to .ui file and an object to load it onto.
 
 ```python
 from PySide import QtGui
-from pysideuic import loadUi
+from pyside2uic import loadUi
 
 class MyWidget(QtGui.QWidget):
 
@@ -27,5 +27,3 @@ class MyWidget(QtGui.QWidget):
         loadUi('mywidget.ui', self)
 
 ```
-
-
