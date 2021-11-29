@@ -35,9 +35,9 @@ import os
 import sys
 import inspect
 
-from PySide.QtCore import Slot, QMetaObject
-from PySide.QtUiTools import QUiLoader
-from PySide.QtGui import QApplication
+from PySide2.QtCore import Slot, QMetaObject
+from PySide2.QtUiTools import QUiLoader
+from PySide2.QtWidgets import QApplication
 
 
 __version__ = '0.1.0'
@@ -111,9 +111,7 @@ def loadUi(uifile, baseinstance=None):
         uifile = os.path.join(os.path.dirname(fp), uifile)
         if not os.path.isfile(uifile):
             uifile = os.path.join(os.path.dirname(fp), 'ui', uifile)
-        
+
     widget = loader.load(uifile)
     QMetaObject.connectSlotsByName(widget)
     return widget
-
-

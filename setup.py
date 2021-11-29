@@ -1,13 +1,13 @@
 
 from setuptools import setup
 
-import pysideuic
+import pyside2uic
 
 
 setup(
-    name='pysideuic',
-    version=pysideuic.__version__,
+    name='pyside2uic',
+    version=pyside2uic.__version__,
     license='MIT',
     author='Brendan Abel',
-    packages=['pysideuic'],
+    packages=['pyside2uic'],
 )
